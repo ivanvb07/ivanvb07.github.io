@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed h-full w-64 bg-gray-100 shadow-md z-50">
+        <div class="flex flex-col h-full p-6">
+            <div class="text-2xl font-bold text-indigo-600 mb-8">Portfolio</div>
+            <div class="flex flex-col space-y-4">
+                <a href="../accueil/index.html" class="nav-link py-2 px-4 hover:bg-indigo-50 rounded-lg">Accueil</a>
+                <a href="../parcours/index.html" class="nav-link py-2 px-4 hover:bg-indigo-50 rounded-lg">Parcours</a>
+                <a href="../compétences/index.html" class="nav-link py-2 px-4 hover:bg-indigo-50 rounded-lg">Compétences</a>
+                <a href="../monde_professionnel/index.html" class="nav-link py-2 px-4 hover:bg-indigo-50 rounded-lg">Expériences</a>
+                <a href="../talents/index.html" class="nav-link py-2 px-4 hover:bg-indigo-50 rounded-lg">Talents</a>
+                <a href="#contact" class="nav-link py-2 px-4 hover:bg-indigo-50 rounded-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="stage" class="gradient-bg pt-32 pb-20 ml-64">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-yellow-300"><u>Mon Stage</u></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contexte du stage -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Contexte du stage</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium">Entreprise</h4>
+                            <a href="https://lipn.univ-paris13.fr">Laboratoire d'Informatique de Paris Nord</a>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Mission</h4>
+                            <p class="text-gray-600">Migration, optimisation et modernisation du backend de l'application web <a href="https://soliditycpn.lipn.univ-paris13.fr"><strong>SOLIDITY2CPN</strong></a> de Django vers AdonisJS, en créant une architecture plus légère et efficace</p>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Durée</h4>
+                            <p class="text-gray-600">Du 27 Janvier 2025 au 21 Mars 2025, soit 8 semaines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environnement -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Environnement</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-medium">Technique</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>Développement, documentation et tests avec AdonisJS, Swagger et Japa</li>
+                                <li>Conteneurisation, architecture hexagonale et échanges de données avec Docker et VineJS</li>
+                                <li>Communication et collaboration avec Mattermost et Gitlab</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium">Humain</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>Divers profils dans l'équipe (ingénieurs, apprentis, stagiaires)</li>
+                                <li>Réunis dans un même espace, encourageant la communication et la collaboration</li>
+                                <li>Communication et collaboration possibles même en distanciel (Mattermost, Gitlab)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Éléments marquants -->
+                <div class="mt-8 bg-gray-100 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Éléments marquants</h3>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>J'ai vraiment apprécié l'accompagnement que j'avais tout au long du stage, tout en étant libre de travailler à mon rythme et de proposer des idées. Ce n'était évidemment pas évident de prendre en main tous ces outils et langages que je découvrais pour la plupart, mais cela m'a permis de sortir de ma zone de confort, de l'environnement technique que je connaissais jusqu'alors.</li>
+                        <li>J'ai été marqué par la bienveillance et la patience dont ont fait preuve les membres de l'équipe, et notamment mon maître de stage, qui était à l'écoute et prêt à m'aider lorsque j'étais en difficulté, mais toujours en me laissant apprendre, tester et comprendre par moi-même</li>
+                    </ul>
+                </div>
+                    <!-- Découvertes -->
+                    <div class="mt-8 bg-gray-100 rounded-lg p-6 shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Ce que j'ai découvert</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Notion d'API, architecture hexagonale et conteneurisation pour s'adapter à tout environnement</li>
+                            <li>Collaboration et échanges quotidients pour expliquer certaines notions</li>
+                            <li>Travail en distanciel, encourageant aussi l'autonomie</li>
+                            <li>Le quotidien d'un développeur, aussi bien ses tâches individuelles que les situations exigeant des efforts de groupe</li>
+                        </ul>
+                    </div>
+                </div>
+                    <!-- Apprentissages -->
+                    <div class="right:col mt-8 bg-gray-100 rounded-lg p-6 shadow-sm">
+                        <h3 class="text-2xl font-semibold mb-6 text-indigo-600">Apprentissages personnels</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>J'ai appris que j'étais capable de m'adapter à un environnement technique et humain inconnu, et ce bien mieux que ce à ceux je m'attendais.
+                                J'ai aussi appris à m'adapter à un rythme de travail différent, plus soutenu, et à m'organiser pour être efficace</li>
+                            <li>J'ai pris conscience de l'importance de la communication et de la collaboration dans un environnement de travail, même en distanciel</li>
+                            <li>J'ai développé mes compétences techniques en apprenant à utiliser de nouveaux outils et langages, notamment AdonisJS, Swagger, Japa, Docker et VineJS</li>
+                            <li>J'ai aussi appris à mieux gérer mon temps et mes priorités, en me concentrant sur les tâches les plus importantes et en évitant de me disperser</li>
+                            <li>J'ai également pu mobiliser et améliorer mes capacités à communiquer et à travailler au sein de l'équipe, que ce soit via les réunions ou via les échanges quotidiens avec les différentes membres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg text-white ml-64">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Contactez-moi</h2>
+            <h3 class="text-2xl font-semibold mb-6">Disponible pour de nouvelles opportunités</h3>
+            <p class="mb-8">Si vous avez des opportunités professionnelles, que ce soit un poste d'alternant ou de stagiaire qui correspond à mes compétences, 
+                ou si vous souhaitez simplement échanger, n'hésitez pas à me contacter.</p>
+            <div class="space-y-6">
+                <div class="flex items-center">
+                    <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium">Email</p>
+                        <p>veljovicbulatovicivan@gmail.com</p>
+                    </div>
+                </div>
+                        
+                <div class="flex items-center">
+                    <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium">Téléphone</p>
+                        <p>+33 768587953</p>
+                    </div>
+                </div>
+                        
+                <div class="flex items-center">
+                    <div class="bg-white bg-opacity-20 p-3 rounded-full mr-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <p class="font-medium">Localisation</p>
+                        <p>La Celle Saint-Cloud, Yvelines</p>
+                    </div>
+                </div>
+            </div>
+                    
+            <div class="mt-8 flex space-x-4">
+                <a href="https://github.com/ivanvb07" class="bg-white text-indigo-600 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ivan-veljovic-bulatovic" class="bg-white text-indigo-600 p-3 rounded-full hover:bg-gray-100 transition duration-300">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 ml-64">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-2xl font-bold text-indigo-400">Portfolio</div>
+                    <p class="mt-2 text-gray-400">© 2025 Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
